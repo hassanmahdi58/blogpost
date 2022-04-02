@@ -33,9 +33,9 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    const validPassword = user.checkPassword(req.body.password);
+    const vPassword = user.checkPassword(req.body.password);
 
-    if (!validPassword) {
+    if (!vPassword) {
       res.status(400).json({ message: 'No user account found!' });
       return;
     }
