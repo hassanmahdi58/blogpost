@@ -3,15 +3,17 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
+app.use(require('./controllers/'));
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+
+const PORT = process.env.PORT || 3002;
 
 const sequelize = require('./config/config');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: 'secret',
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -31,7 +33,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('./controllers/'));
+
 
 app.listen(PORT, () => {
   console.log(`App listening on PORT ${PORT}!`);
