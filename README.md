@@ -66,3 +66,5 @@ The following animation demonstrates the application functionality:
 ![Screenshot (63)](https://user-images.githubusercontent.com/94930434/161406042-c736f66a-63e8-4db8-9754-6ed11418782c.png)
 ![Screenshot (61)](https://user-images.githubusercontent.com/94930434/161406043-aab5193b-640f-41b9-8b0f-7dfd8b620cd8.png)
 
+## Deployed
+URL - https://blogpost100.herokuapp.com/
