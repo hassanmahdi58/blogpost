@@ -79,16 +79,3 @@ The following animation demonstrates the application functionality:
 
 Heroku - https://blogpost100.herokuapp.com/
 
-## References
-
-* Flexbox positioning
-
-Mozilla.org
-
-Stack Overflow
-
-Masonry grid
-
-Bootstrap
-
-unsplash
